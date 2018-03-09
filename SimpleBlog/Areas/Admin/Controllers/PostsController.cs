@@ -24,5 +24,9 @@ namespace SimpleBlog.Areas.Admin.Controllers
             return Content(id);
         }
 
+        public ActionResult ornek()
+        {
+            return Content("WP");
+        }
     }
 }
