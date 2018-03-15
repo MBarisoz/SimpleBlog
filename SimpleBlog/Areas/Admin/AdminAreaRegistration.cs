@@ -21,6 +21,8 @@ namespace SimpleBlog.Areas.Admin
                 new { action = "Index", id = UrlParameter.Optional }
             );
             
+
+
         }
     }
 }

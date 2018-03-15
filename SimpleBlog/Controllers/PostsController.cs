@@ -11,7 +11,7 @@ namespace SimpleBlog.Controllers
         // GET: Posts
         public ActionResult Index()
         {
-            return Content("HOMEPAGE");
+            return View();
         }
     }
 }

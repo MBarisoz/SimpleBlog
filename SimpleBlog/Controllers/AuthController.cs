@@ -11,7 +11,7 @@ namespace SimpleBlog.Controllers
         // GET: Login
         public ActionResult Login()
         {
-            return Content("LOGIN");
+            return View();
         }
     }
 }

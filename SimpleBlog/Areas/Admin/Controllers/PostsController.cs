@@ -11,22 +11,12 @@ namespace SimpleBlog.Areas.Admin.Controllers
         // GET: Admin/Posts
         public ActionResult Index()
         {
-            return Content("Admin Posts Controller");
+            return Content("Admin Posts Controller Index Action");
         }
 
         public ActionResult New()
         {
             return Content("A new page");
-        }
-
-        public ActionResult Edit(string id)
-        {
-            return Content(id);
-        }
-
-        public ActionResult ornek()
-        {
-            return Content("WP");
         }
     }
 }

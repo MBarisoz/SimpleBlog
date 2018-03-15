@@ -1,0 +1,24 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_Layout</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="@Url.RouteUrl("")"> Simple Blog </a>
+        </h1>
+
+    </header>
+    <h3>TOP</h3>
+    @RenderBody()
+    <h3>BOTTOM</h3>
+</body>
+</html>
