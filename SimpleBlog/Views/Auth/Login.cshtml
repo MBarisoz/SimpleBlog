@@ -1,10 +1,23 @@
-﻿
-@*@{
-    //c# kodlarını ifade eder.
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}*@
+﻿@model SimpleBlog.ViewModels.AuthLogin
 
-    <h1>Login</h1>
-    <p>
-        <a href="/">Click Here!</a>
-    </p>
+@{
+    ViewBag.Title = "Login";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+    <div>
+        @Html.LabelFor(x => x.UserName)
+        @Html.EditorFor(x => x.UserName)
+    </div>
+
+    <div>
+        @Html.LabelFor(x => x.Password)
+        @Html.EditorFor(x => x.Password)
+    </div>
+
+    <div>
+        <input type="submit" value="Login" />
+    </div>
+}
