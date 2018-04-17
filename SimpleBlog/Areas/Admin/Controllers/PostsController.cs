@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace SimpleBlog.Areas.Admin.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class PostsController : Controller
     {
         // GET: Admin/Posts
@@ -14,9 +15,5 @@ namespace SimpleBlog.Areas.Admin.Controllers
             return Content("Admin Posts Controller Index Action");
         }
 
-        public ActionResult New()
-        {
-            return Content("A new page");
-        }
     }
 }

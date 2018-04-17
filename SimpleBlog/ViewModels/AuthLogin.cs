@@ -13,6 +13,7 @@ namespace SimpleBlog.ViewModels
         {
             get; set;
         }
+
         [Required]
         [DataType(DataType.Password)]
         public string Password
